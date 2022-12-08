@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Aplikasi Rubah Warna Lampu</title>
+	<link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-4 col-xs-4 offset-4 p-2 text-center">
+				<h5>Aplikasi Ubah Warna Lampu</h5>
+				<div class="m-2 ">
+					<img src="img/lampu1.png" alt="" id="tes">
+					<img id="merah" class="lampu" src="img/merah.png" alt="">
+					<img id="kuning" class="lampu" src="img/kuning.png" alt="">
+					<img id="hijau" class="lampu" src="img/hijau.png" alt="">
+				</div>
+				<div class="m-1 b">
+					<button class="btn btn-danger" id="btn1">Merah</button>
+					<button class="btn btn-warning" id="btn2">Kuning</button>
+					<button class="btn btn-success" id="btn3">Hijau</button>
+				</div>
+				
+				<button class="btn btn-secondary btn-block" id="btn4">Matikan Lampu</button>
+			</div>
+		</div>
+	</div>
+<!-- javascript -->
+    <script>
+        var btn1 = document.getElementById('btn1');
+        var btn2 = document.getElementById('btn2');
+        var btn4 = document.getElementById('btn3');
+        var btn4 = document.getElementById('btn4');
+        var merah = document.getElementById('merah');
+        var kuning = document.getElementById('kuning');
+        var hijau = document.getElementById('hijau');
+
+        //fungsi rubah lampu
+        btn1.onclick = function(){
+            merah.style.display = 'block';
+            kuning.style.display = 'none';
+            hijau.style.display = 'none';
+        }
+        btn2.onclick = function(){
+            kuning.style.display = 'block';
+            merah.style.display = 'none';
+            hijau.style.display = 'none';
+        }
+        btn3.onclick = function(){
+            hijau.style.display = 'block';
+            kuning.style.display = 'none';
+            merah.style.display = 'none';
+        }
+        btn4.onclick = function(){
+            hijau.style.display = 'none';
+            kuning.style.display = 'none';
+            merah.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
